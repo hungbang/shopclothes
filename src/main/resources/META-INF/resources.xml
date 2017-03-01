@@ -1,0 +1,15 @@
+<resources>
+    <Resource id="testDS" type="javax.sql.DataSource">
+        JdbcDriver = com.mysql.jdbc.Driver
+        JdbcUrl = jdbc:mysql://localhost:8889/sakila
+        UserName = root
+        Password = root
+    </Resource>
+    <Resource id="testDSUnmanaged" type="javax.sql.DataSource">
+        JdbcDriver = com.mysql.jdbc.Driver
+        JdbcUrl = jdbc:mysql://localhost:8889/sakila
+        UserName = root
+        Password = root
+        JtaManaged = false
+    </Resource>
+</resources>
